@@ -109,7 +109,7 @@ reveal();
 
 
 
-fetch('/js/papers.json')
+fetch('js/papers.json')
 .then(response => response.json())
 .then(data => {
 // Create a list from the JSON data
