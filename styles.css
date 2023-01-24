@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&&display=swap");
 
 /* Larger font size for large screens */
 @media (min-width: 1200px) {
@@ -21,35 +20,35 @@
     font-size: 1.5rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 
   h4 {
     font-size: 1.25rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 
   h5 {
     font-size: 1rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 
   h6 {
     font-size: 0.75rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 
   p {
     font-size: 1.25rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 }
 
@@ -59,52 +58,51 @@
     font-size: 1.5rem;
     font-family: "Roboto";
     color: #ffff00;
-    font-weight: 700
+    font-weight: 700;
   }
 
   h2 {
     font-size: 1.25rem;
     font-family: "Roboto";
     color: #ffff00;
-    font-weight: 600
+    font-weight: 600;
   }
 
   h3 {
     font-size: 1rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 
   h4 {
     font-size: 0.9rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 
   h5 {
     font-size: 0.8rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 
   h6 {
     font-size: 0.7rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 
   p {
     font-size: 0.9rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 }
-
 
 /* Smaller font size for mobile devices */
 @media (max-width: 767px) {
@@ -112,65 +110,61 @@
     font-size: 600;
     font-family: "Roboto";
     color: #ffff00;
-    font-weight: 500
+    font-weight: 500;
   }
 
   h2 {
     font-size: 1rem;
     font-family: "Roboto";
     color: #ffff00;
-    font-weight: 700
+    font-weight: 700;
   }
 
   h3 {
     font-size: 0.9rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 
   h4 {
     font-size: 0.8rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 
   h5 {
     font-size: 0.7rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 
   h6 {
     font-size: 0.6rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 
   p {
     font-size: 0.8rem;
     font-family: "Roboto";
     color: #ffffff;
-    font-weight: 100
+    font-weight: 100;
   }
 }
-
 
 body {
   background: #222529;
   color: #ffff00;
   font-family: "Roboto", sans-serif;
-
 }
 
 div {
-
   color: #ffff00;
   font-family: "Roboto", sans-serif;
-
 }
 
 section {
@@ -180,7 +174,6 @@ section {
   height: 70rem;
   /* padding: 10% auto 10% auto; */
 }
-
 
 /*  ----------------------------   */
 /* CSS for header */
@@ -194,7 +187,6 @@ header {
   padding: 20px;
   text-align: center;
   border-bottom: 1px solid #ffff00;
-
 }
 
 header nav a {
@@ -214,11 +206,8 @@ header nav a.active {
   letter-spacing: 2px;
 }
 
-
-
 /*  ----------------------------   */
 /* CSS for about and icons used */
-
 
 .div-icon {
   padding: 80px 80px 80px auto;
@@ -240,28 +229,25 @@ a.a-icon svg {
   padding: 40px auto 40px auto;
   height: 3rem;
   width: 3rem;
-
 }
 
 .Name {
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   align-items: left;
   font-weight: 200;
   font-size: 1.5rem;
   margin: 0 auto 0 auto;
   font-height: 0.7rem;
-
 }
 
 .Family {
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   align-items: left;
   font-weight: 400;
   font-size: 1.5rem;
   margin: 0 auto 0 auto;
   font-height: 0.7rem;
 }
-
 
 .profile {
   background-color: #222529;
@@ -274,8 +260,6 @@ a.a-icon svg {
   align-items: center;
   margin: 0 auto 0 auto;
 }
-
-
 
 /* CSS for Procesession bar */
 
@@ -301,7 +285,7 @@ a.a-icon svg {
   left: 0;
 }
 
-.progress>span {
+.progress > span {
   width: 50%;
   height: 100%;
   overflow: hidden;
@@ -385,10 +369,6 @@ a.a-icon svg {
   animation: loading-4 1.5s linear forwards 1.8s;
 }
 
-
-
-
-
 @keyframes loading-1 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -426,16 +406,16 @@ a.a-icon svg {
 }
 
 @keyframes loading-4 {
-    0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      -webkit-transform: rotate(108deg);
-      transform: rotate(108deg);
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
+  100% {
+    -webkit-transform: rotate(108deg);
+    transform: rotate(108deg);
+  }
+}
 /* Example of calculation:90% => 0.1*360= 36 => 180-36 */
 /* Example of calculation:80% => 0.2*360= 72 => 180-72 */
 /* Example of calculation:75% => 0.25*360= 72 => 180-72 */
@@ -444,21 +424,15 @@ a.a-icon svg {
 .list-item {
   padding: 1rem;
   margin: 1rem 0rem 1rem 0rem;
-  ;
 }
 
-
-
-
 .paper-list {
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .paper {
-
   width: 600px;
   margin: 20px;
   padding: 20px;
@@ -466,7 +440,6 @@ a.a-icon svg {
   border-radius: 10px;
   animation: float 1s ease-in-out infinite;
 }
-
 
 /* Titles */
 
@@ -503,7 +476,6 @@ a.a-icon svg {
   }
 }
 
-
 /* Info - Aboot section */
 
 /* ------------ */
@@ -537,9 +509,6 @@ a.a-icon svg {
     font-weight: 100;
   }
 }
-
-
-
 
 /* ------------ */
 /*  Paper Title */
@@ -639,14 +608,11 @@ a.a-icon svg {
   }
 }
 
-
 #author-name {
   font-size: medium;
   margin: 20px;
   padding: 10px;
 }
-
-
 
 .section-1 {
   background-repeat: no-repeat, repeat;
