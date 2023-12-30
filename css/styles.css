@@ -50,7 +50,29 @@
     color: #ffffff;
     font-weight: 100;
   }
+  li {
+    font-size: 1.5rem;
+    font-family: "Roboto";
+    color: #ffffff;
+    font-weight: 100;
+    text-decoration: none;
+  }
+  li a:link {
+    font-size: 1.5rem;
+    font-family: "Roboto";
+    color: #ffffff;
+    font-weight: 100;
+    text-decoration: none;
+  }
 }
+
+/* Make the video responsive */
+video {
+  width: 100%;    /* Relative to the parent container */
+  height: auto;   /* Maintain the aspect ratio */
+}
+
+
 
 /* Medium font size for tablets */
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -101,6 +123,19 @@
     font-family: "Roboto";
     color: #ffffff;
     font-weight: 100;
+  }
+  li {
+    font-size: 1rem;
+    font-family: "Roboto";
+    color: #ffffff;
+    font-weight: 100;
+  }
+  li a:link  {
+    font-size: 1rem;
+    font-family: "Roboto";
+    color: #ffffff;
+    font-weight: 100;
+    text-decoration: none;
   }
 }
 
@@ -154,7 +189,305 @@
     color: #ffffff;
     font-weight: 100;
   }
+  li {
+    font-size: 0.9rem;
+    font-family: "Roboto";
+    color: #ffffff;
+    font-weight: 100;
+  }
+  li a:link {
+    font-size: 0.9rem;
+    font-family: "Roboto";
+    color: #ffffff;
+    font-weight: 100;
+    text-decoration: none;
+  }
 }
+
+
+
+/* CSS for responsiveness and alignment */
+.container {
+  padding: 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.row.align-items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-container {
+  text-align: center;
+  position: relative; /* To maintain aspect ratio */
+}
+
+.profile {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%; /* Maintain aspect ratio */
+  padding-left: 1rem;
+}
+
+.text-container {
+  padding-top: 40px;
+  text-align: justify;
+}
+
+.icon-container {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+
+
+/* Custom CSS for large screens */
+@media (min-width: 1100px) {
+  .icon-image {
+      width: 80%; /* Adjust this value as needed */
+      height: auto;
+      margin: 0 auto; /* This centers the image in its column */
+  }
+}
+
+
+/* Custom CSS for large screens */
+@media (min-width: 900px) and (max-width: 1100px) {
+  .icon-image {
+      width: 95%; /* Adjust this value as needed */
+      height: auto;
+      margin: 0 auto; /* This centers the image in its column */
+  }
+}
+
+
+
+/* Custom CSS for large screens */
+@media (min-width: 600px) and (max-width: 900px) {
+  .icon-image {
+      width: 115%; /* Adjust this value as needed */
+      height: auto;
+      margin: 0 auto; /* This centers the image in its column */
+  }
+}
+
+
+/* Custom CSS for large screens */
+@media (max-width: 600px) {
+  .icon-image {
+      width: 135%; /* Adjust this value as needed */
+      height: auto;
+      margin: 0 auto; /* This centers the image in its column */
+  }
+}
+
+
+
+/* Base Styles */
+.hover-text {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-family: "Roboto";
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 100%; /* Position to the end of hover-text */
+  top: 0; /* Align with the top of hover-text */
+  background-color: rgba(255, 255, 255, 0.95); /* semi-transparent */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px; /* rounded corners */
+  z-index: 1;
+  transition: opacity 0.5s; /* smooth transition */
+  opacity: 0; /* start hidden */
+  min-width: 160px; /* Default minimum width */
+}
+
+.dropdown-content a {
+  color: #222529;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {background-color: #ffff00}
+
+/* Medium font size and larger dropdown for tablets */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .dropdown-content, .dropdown-content a {
+    font-size: 1rem; /* Adjusted for tablets */
+    min-width: 200px; /* Larger width for tablets */
+  }
+}
+
+/* Smaller font size and smaller dropdown for mobile devices */
+@media (max-width: 767px) {
+  .dropdown-content, .dropdown-content a {
+    font-size: 0.8rem; /* Adjusted for mobile */
+    min-width: 150px; /* Smaller width for mobile */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#about .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile {
+  width: 100%; /* Makes the image responsive */
+  border-radius: 50%; /* Circular image */
+  display: block;
+  margin: 0 auto; /* Center align on small screens */
+  max-width: 200px; /* Maximum width of the image */
+}
+
+@media (min-width: 768px) {
+  .profile {
+    margin: 0; /* Reset margin for larger screens */
+    max-width: 100%; /* Allow image to scale up on larger screens */
+  }
+}
+
+/* Justify text in the about section */
+#about .col-lg-9 {
+  text-align: justify;
+}
+
+/* Additional styles to ensure the image and text align at the top */
+.row.align-items-start {
+  align-items: start;
+}
+
+
+
+
+
+.div-icon {
+  padding: 80px 0px 80px auto;
+  fill: #ffff00;
+  color: #ffff00;
+}
+
+a.a-icon {
+  fill: #ffff00;
+  color: #ffff00;
+  margin-right: 20px;
+  padding: 0px 0px 00px auto;
+  text-decoration: none;
+}
+
+a.a-icon svg {
+  fill: #ffff00;
+  color: #ffff00;
+  padding: 0px auto 0px auto;
+  height: 7%;
+  width: 7%;
+}
+
+/* Base style for icons */
+.a-icon svg {
+  height: 100%; /* Default height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Style for smaller screens */
+
+
+/* @media (max-width: 768px) {
+
+  
+  .div-icon {
+    padding: 1rem 1rem 1rem auto;
+    fill: #ffff00;
+    color: #ffff00;
+  }
+  
+  a.a-icon {
+    fill: #ffff00;
+    color: #ffff00;
+    margin-right: 1rem;
+    padding: 1rem 1rem 1rem auto;
+    text-decoration: none;
+  }
+  
+  a.a-icon svg {
+    fill: #ffff00;
+    color: #ffff00;
+    padding: 1rem auto 1rem auto;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body {
   background: #222529;
@@ -209,27 +542,6 @@ header nav a.active {
 /*  ----------------------------   */
 /* CSS for about and icons used */
 
-.div-icon {
-  padding: 80px 80px 80px auto;
-  fill: #ffff00;
-  color: #ffff00;
-}
-
-a.a-icon {
-  fill: #ffff00;
-  color: #ffff00;
-  margin-right: 20px;
-  padding: 40px 20px 40px auto;
-  text-decoration: none;
-}
-
-a.a-icon svg {
-  fill: #ffff00;
-  color: #ffff00;
-  padding: 40px auto 40px auto;
-  height: 3rem;
-  width: 3rem;
-}
 
 .Name {
   font-family: "Roboto", serif;
@@ -237,7 +549,6 @@ a.a-icon svg {
   font-weight: 200;
   font-size: 1.5rem;
   margin: 0 auto 0 auto;
-  font-height: 0.7rem;
 }
 
 .Family {
@@ -246,7 +557,6 @@ a.a-icon svg {
   font-weight: 400;
   font-size: 1.5rem;
   margin: 0 auto 0 auto;
-  font-height: 0.7rem;
 }
 
 .profile {
@@ -517,7 +827,7 @@ a.a-icon svg {
   .paper-title {
     font-size: 1.75rem;
     font-family: "Roboto";
-    color: #ffff00;
+    color: #ffffff;
     font-weight: normal;
   }
 }
@@ -527,7 +837,7 @@ a.a-icon svg {
   .paper-title {
     font-size: 1.25rem;
     font-family: "Roboto";
-    color: #ffff00;
+    color: #ffffff;
     font-weight: normal;
   }
 }
@@ -537,7 +847,7 @@ a.a-icon svg {
   .paper-title {
     font-size: 1rem;
     font-family: "Roboto";
-    color: #ffff00;
+    color: #ffffff;
     font-weight: normal;
   }
 }
@@ -608,6 +918,91 @@ a.a-icon svg {
   }
 }
 
+
+
+
+
+
+.footer {
+  background-color: #151719;
+  padding: 7% 15%;
+  margin-top: 10rem;
+  border-top: 5px solid #333;
+  color: #ffff00; /* Yellow color for text */
+}
+
+.footer .details {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.footer .details .row {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin: 10px 0;
+}
+
+.footer .details .icon {
+  margin-right: 10px;
+  flex-shrink: 0; /* Prevents icon from shrinking */
+}
+.footer .details h3 {
+  margin: 0;
+  line-height: 1.2; /* Adjust line height for better visual alignment */
+  font-size: 1.25rem; /* Adjust font size as needed */
+}
+
+.footer a, .footer a:visited {
+  color: #ffff00; /* Yellow color for links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  color: #6a6d73;
+  text-align: center;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .footer .details .row {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
+.footer .details .row {
+  display: flex;
+  align-items: center; 
+  margin: 10px 0;
+}
+
+
+
+.footer .details .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+
+.cv-link a {
+  color: #ffff00; 
+  text-decoration: none; 
+}
+
+
+
+
+
+
+
+
+
+
 #author-name {
   font-size: medium;
   margin: 20px;
@@ -618,4 +1013,47 @@ a.a-icon svg {
   background-repeat: no-repeat, repeat;
   background-image: url("img_tree.gif"), url("paper.gif");
   background-blend-mode: lighten;
+}
+
+
+
+.profile {
+  margin-top: 0;
+  display: block;
+  border-radius: 50%; /* Default to circle */
+  transition: border-radius 0.3s ease; /* Smooth transition for border-radius */
+  max-width: 300px; /* Maximum size for large screens */
+  width: 100%; /* Default width */
+  height: auto;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .profile {
+      border-radius: 30% 50%; /* Change to oval shape on smaller screens */
+      max-width: 200px; /* Smaller maximum size for small screens */
+      width: 100%; /* Smaller default width for small screens */
+  }
+}
+
+
+
+
+.info-row {
+  display: flex;
+  align-items: center; /* Aligns items to the top */
+  margin-bottom: 10px; /* Space between rows */
+}
+
+.icon {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 1.5em; /* Adjust icon size as needed */
+  flex-shrink: 0; /* Prevents the icon from shrinking */
+}
+
+.info-row p, .info-row a {
+  margin: 0; /* Remove default margin for paragraphs and links */
+  text-align: justify; /* Justifies the text */
+  display: flex; /* Aligns text to the left */
+  flex-grow: 1; /* Allows text to take available space */
 }
