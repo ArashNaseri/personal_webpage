@@ -21,6 +21,7 @@
     font-family: "Roboto";
     color: #ffffff;
     font-weight: 100;
+    text-decoration: none;
   }
 
   h4 {
@@ -38,9 +39,9 @@
   }
 
   h6 {
-    font-size: 0.75rem;
+    font-size: 1.5rem;
     font-family: "Roboto";
-    color: #ffffff;
+    color: #ffff00;
     font-weight: 100;
   }
 
@@ -60,11 +61,22 @@
   li a:link {
     font-size: 1.5rem;
     font-family: "Roboto";
-    color: #ffffff;
+    color: #00bfff;
     font-weight: 100;
     text-decoration: none;
   }
+  li a:hover {
+    font-size: 1.5rem;
+    font-family: "Roboto";
+    color: #00bfff;
+    font-weight: 100;
+    text-decoration: underline;
+  }
 }
+
+  a { color: #00bfff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .no-decoration { text-decoration: none; }
 
 /* Make the video responsive */
 video {
@@ -95,6 +107,7 @@ video {
     font-family: "Roboto";
     color: #ffffff;
     font-weight: 100;
+    text-decoration: none;
   }
 
   h4 {
@@ -112,9 +125,9 @@ video {
   }
 
   h6 {
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-family: "Roboto";
-    color: #ffffff;
+    color: #ffff00;
     font-weight: 100;
   }
 
@@ -133,9 +146,16 @@ video {
   li a:link  {
     font-size: 1rem;
     font-family: "Roboto";
-    color: #ffffff;
+    color: #00bfff;
     font-weight: 100;
     text-decoration: none;
+  }
+  li a:hover {
+    font-size: 1rem;
+    font-family: "Roboto";
+    color: #00bfff;
+    font-weight: 100;
+    text-decoration: underline;
   }
 }
 
@@ -160,6 +180,7 @@ video {
     font-family: "Roboto";
     color: #ffffff;
     font-weight: 100;
+    text-decoration: none;
   }
 
   h4 {
@@ -177,9 +198,9 @@ video {
   }
 
   h6 {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     font-family: "Roboto";
-    color: #ffffff;
+    color: #ffff00;
     font-weight: 100;
   }
 
@@ -198,9 +219,16 @@ video {
   li a:link {
     font-size: 0.9rem;
     font-family: "Roboto";
-    color: #ffffff;
+    color: #00bfff;
     font-weight: 100;
     text-decoration: none;
+  }
+  li a:hover {
+    font-size: 0.9rem;
+    font-family: "Roboto";
+    color: #00bfff;
+    font-weight: 100;
+    text-decoration: underline;
   }
 }
 
@@ -1057,3 +1085,25 @@ header nav a.active {
   display: flex; /* Aligns text to the left */
   flex-grow: 1; /* Allows text to take available space */
 }
+
+
+
+
+.additional-header header {
+  position: sticky;
+  top: 0; /* Adjust as needed */
+  z-index: 100; /* Ensures it stays above other content */
+  background-color: #000; /* Or any color that matches your design */
+}
+
+.additional-header .navbar {
+  /* Add any additional styles to match your main header */
+}
+
+
+
+
+
+
+
+
