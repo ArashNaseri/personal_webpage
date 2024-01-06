@@ -67,79 +67,6 @@ async function fetchPublications(orcidId) {
 }
 
 
-// function displayPublications(publications) {
-//     const listItems = document.getElementById("papers");
-
-//     publications.forEach(publication => {
-//         const workSummary = publication['work-summary'][0];
-
-//         const title = workSummary.title.title.value;
-//         const publicationYear = workSummary['publication-date'] ? workSummary['publication-date'].year.value : 'N/A';
-//         let journalName = workSummary['journal-title'] ? workSummary['journal-title'].value : 'Naseri, A. et al.';
-
-//         let authors = extractAuthors(workSummary['contributors']);
-
-//         let doi = extractDOI(workSummary['external-ids']);
-
-//         let listItem = document.createElement("div");
-//         listItem.classList.add("publication-item");
-//         listItem.setAttribute("data-aos", "fade-up");
-//         listItem.setAttribute("data-aos-delay", "500");
-//         listItem.setAttribute("data-aos-duration", "700");
-//         listItem.innerHTML = `
-//             <i class='fa-solid fa-x1 fa-pen'></i>
-//             <div class='publication-text'>
-//                 <h3 class='paper-title'>${title}</h3>
-//                 <p class='paper-details'>
-//                     <span class='paper-authors'>${authors}</span>, 
-//                     <span class='journal'>${journalName}</span>, 
-//                     <span class='year'>${publicationYear}</span>,
-//                     DOI: <a href='${doi.link}' target='_blank'>${doi.value}</a>
-//                 </p>
-//             </div>
-//         `;
-//         listItems.appendChild(listItem);
-//     });
-// }
-
-
-
-
-// function extractAuthors(contributors) {
-//   if (!contributors || !contributors.contributor) {
-//       return 'N/A';
-//   }
-
-//   let authorNames = contributors.contributor.map(contributor => {
-//       if (contributor['credit-name'] && contributor['credit-name'].value) {
-//           return contributor['credit-name'].value;
-//       } else if (contributor['contributor-orcid'] && contributor['contributor-orcid'].path) {
-//           return contributor['contributor-orcid'].path;
-//       } else if (contributor.contributorAttributes && contributor.contributorAttributes.contributorSequence) {
-//           return contributor.contributorAttributes.contributorSequence;
-//       }
-//       return 'Anonymous';
-//   });
-
-//   return authorNames.join(', ');
-// }
-
-// function extractDOI(externalIds) {
-//   if (externalIds && externalIds['external-id'].length > 0) {
-//       const doiEntry = externalIds['external-id'].find(id => id['external-id-type'] === 'doi');
-//       if (doiEntry) {
-//           return {
-//               value: doiEntry['external-id-value'],
-//               link: `https://doi.org/${doiEntry['external-id-value']}`
-//           };
-//       }
-//   }
-//   return { value: 'N/A', link: '#' };
-// }
-
-// const orcidId = '0000-0002-1493-6761';
-// fetchPublications(orcidId).then(displayPublications);
-
 function displayPublications(publications) {
     const listItems = document.getElementById("papers");
 
@@ -177,7 +104,7 @@ function displayPublications(publications) {
 
 function extractAuthors(contributors) {
     if (!contributors || !contributors.contributor) {
-        return 'N/A';
+        return 'Naseri et al.';
     }
 
     let authorNames = contributors.contributor.map(contributor => {
