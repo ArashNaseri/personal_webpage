@@ -21,6 +21,7 @@
     font-family: "Roboto";
     color: #ffffff;
     font-weight: 100;
+    text-align: justify;
     text-decoration: none;
   }
 
@@ -105,6 +106,7 @@ video {
   h3 {
     font-size: 1rem;
     font-family: "Roboto";
+    text-align: justify;
     color: #ffffff;
     font-weight: 100;
     text-decoration: none;
@@ -178,6 +180,7 @@ video {
   h3 {
     font-size: 0.9rem;
     font-family: "Roboto";
+    text-align: justify;
     color: #ffffff;
     font-weight: 100;
     text-decoration: none;
@@ -244,6 +247,7 @@ video {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
+
 
 .row.align-items-center {
   display: flex;
@@ -790,6 +794,13 @@ header nav a.active {
     font-weight: 900;
     margin: 5% auto 6.5% auto;
   }
+  .section-title2 {
+    font-size: 4rem;
+    font-family: "Roboto";
+    color: #ffff00;
+    font-weight: 900;
+    margin: 5% auto 6.5% auto;
+  }
 }
 
 /* Medium font size for tablets */
@@ -801,12 +812,26 @@ header nav a.active {
     font-weight: 700;
     margin: 5% auto 6.5% auto;
   }
+  .section-title2 {
+    font-size: 3rem;
+    font-family: "Roboto";
+    color: #ffff00;
+    font-weight: 700;
+    margin: 5% auto 6.5% auto;
+  }
 }
 
 /* Smaller font size for mobile devices */
 @media (max-width: 767px) {
   .section-title {
     font-size: 3.4rem;
+    font-family: "Roboto";
+    color: #ffff00;
+    font-weight: 500;
+    margin: 5% auto 6.5% auto;
+  }
+  .section-title2 {
+    font-size: 1.2rem;
     font-family: "Roboto";
     color: #ffff00;
     font-weight: 500;
